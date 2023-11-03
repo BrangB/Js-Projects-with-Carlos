@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E3EEF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    width: 600px;
+    min-height: 350px;
+    box-shadow: 5px 5px 10px #bebebe;
+    padding: 20px 60px;
+    transition: all ease .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    background-image: url("backgroundImg.jpg");
+    background-attachment: initial;
+    background-position: left;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.card h1{
+    color: rgba(5, 13, 73, 0.795);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.author{
+    color: #A5B3C1;
+    font-size: 25px;
+    font-style: italic;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px #bebebe;
+}
+.btn{
+    background: #4A9FD5;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 30px;
+    right: -60px;
+    transition: all ease .3s;
+}
+.btn:hover{
+    background: #4ea5db;
+}
+
+@keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
