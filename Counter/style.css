@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #E3EEF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    width: 600px;
+    min-height: 350px;
+    box-shadow: 5px 5px 10px #a5a5a5;
+    padding: 20px 60px;
+    transition: all ease .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    background-image: url("backgroundImg.jpg");
+    background-attachment: initial;
+    background-position: left;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.card:hover{
+    box-shadow: 5px 5px 15px #a5a5a5;
+}
+.card span{
+    font-size: 100px;
+}
+.card .btn{
+    margin: 10px;
+    padding: 6px 16px;
+    background: #4A9FD5;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    transition: all ease .2s;
+}
+.card .btn:hover{
+    background: #4da8e0;
+}
